@@ -336,23 +336,3 @@ if __name__ == '__main__':
     hgnn_model, train_loss, test_loss = HGNN_train(Ol_Model, gnn_train_loader, gnn_test_loader)
 
     pcnet_model, nn_train_losses, nn_test_losses = NN_train(nn_train_loader, nn_test_loader)
-
-    # test with multi_scales
-
-        # 生成大量测试场景
-
-
-    # inference directly
-    loaded_hgnn = torch.load('./TO_models/Pretrain/'+multi_scales+'/HGNN_2048_500.pt', map_location=args.device)
-    loaded_nn = torch.load('./TO_models/Pretrain/'+multi_scales+'/PcNet_2048_500.pt', map_location=args.device)
-
-
-
-    # fine-tunning
-
-    # GA iteration
-
-    # PcNet inference directly
-
-    # PcNet training
-
